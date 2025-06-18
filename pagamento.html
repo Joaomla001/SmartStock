@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Forma de Pagamento - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('pedidos.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo" />
+    </div>
+
+    <div class="px-6 pb-6">
+      <h2 class="form-title">FORMA DE PAGAMENTO</h2>
+
+      <div id="payment-methods" class="payment-methods space-y-4 mb-8"></div>
+
+      <button id="confirm-payment" class="confirm-payment-button" disabled>
+        Confirmar Pagamento
+      </button>
+    </div>
+  </div>
+</body>
+</html>

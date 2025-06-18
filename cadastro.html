@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('login.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo-large" />
+    </div>
+
+    <div class="px-6 pb-6">
+      <div class="smartstock-card">
+        <h2 class="form-title">CADASTRO</h2>
+
+        <form id="cadastro-form" class="form-group">
+          <div class="input-icon">
+            <span class="icon">👤</span>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              required
+            />
+          </div>
+
+          <div class="input-icon">
+            <span class="icon">👤</span>
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              placeholder="Sobrenome"
+              required
+            />
+          </div>
+
+          <div class="input-icon">
+            <span class="icon">📧</span>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="input-icon">
+            <span class="icon">📞</span>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Telefone"
+              required
+            />
+          </div>
+
+          <div class="input-icon">
+            <span class="icon">📅</span>
+            <input
+              type="date"
+              name="dataNascimento"
+              id="dataNascimento"
+              placeholder="Data de Nascimento"
+              required
+            />
+          </div>
+
+          <div class="input-icon">
+            <span class="icon">👥</span>
+            <select
+              name="genero"
+              id="genero"
+              required
+            >
+              <option value="">Selecione o gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+              <option value="prefiro-nao-informar">Prefiro não informar</option>
+            </select>
+          </div>
+
+          <button type="submit" class="smartstock-button-primary">CADASTRAR</button>
+        </form>
+
+        <div class="text-center mt-6">
+          <button onclick="navigateTo('login.html')" class="text-link">
+            Já tem uma conta? Entrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

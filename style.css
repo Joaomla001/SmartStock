@@ -1,0 +1,494 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.smartstock-container {
+  max-width: 480px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.smartstock-header {
+  padding: 2rem 1.5rem 1rem;
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.smartstock-logo-large {
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.smartstock-card {
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.07);
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+h2, h3, h4 {
+  color: #374151;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #374151;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #14b8a6; /* smartstock teal */
+  outline: none;
+  box-shadow: 0 0 5px #14b8a6aa;
+}
+
+.smartstock-input {
+  padding-left: 3rem;
+  position: relative;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon .icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 1.25rem;
+  user-select: none;
+}
+
+.smartstock-button-primary {
+  background-color: #f97316; /* smartstock orange */
+  color: white;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+  user-select: none;
+}
+
+.smartstock-button-primary:hover {
+  background-color: #ea580c; /* smartstock orange dark */
+}
+
+.smartstock-button-secondary {
+  background-color: #14b8a6; /* smartstock teal */
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.4rem 1rem;
+  user-select: none;
+}
+
+.smartstock-button-secondary:hover {
+  background-color: #0f766e; /* smartstock teal dark */
+}
+
+.text-link {
+  background: none;
+  border: none;
+  color: #6b7280; /* gray-600 */
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  transition: color 0.3s ease;
+  margin-top: 0.5rem;
+  user-select: none;
+}
+
+.text-link:hover {
+  color: #14b8a6; /* smartstock teal */
+}
+
+.text-link.strong {
+  color: #14b8a6;
+  font-weight: 600;
+}
+
+.text-link.strong:hover {
+  color: #0f766e; /* smartstock teal dark */
+}
+
+/* Botão do menu superior */
+.smartstock-menu-button {
+  background: none;
+  border: 2px solid #14b8a6;
+  padding: 0.4rem 1rem;
+  color: #14b8a6;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  user-select: none;
+}
+
+.smartstock-menu-button:hover {
+  background-color: #14b8a6;
+  color: white;
+}
+
+/* Cards itens menu, receitas e estoque */
+
+.smartstock-item-card {
+  background-color: white;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 7px rgb(0 0 0 / 0.07);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.smartstock-item-card:hover {
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.12);
+}
+
+.smartstock-item-card > div,
+.smartstock-item-card > span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.smartstock-item-card span.text-lg {
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Grid para página pedidos */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Layout carrinho */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.border {
+  border: 1px solid #d1d5db;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-t {
+  border-top: 1px solid #d1d5db;
+}
+
+.border-smartstock-teal {
+  border-color: #14b8a6;
+}
+
+.bg-smartstock-teal {
+  background-color: #14b8a6;
+}
+
+.bg-smartstock-teal-dark {
+  background-color: #0f766e;
+}
+
+.bg-smartstock-orange {
+  background-color: #f97316;
+}
+
+.bg-smartstock-orange-dark {
+  background-color: #ea580c;
+}
+
+.text-smartstock-teal {
+  color: #14b8a6;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Botões círculo (+/-) para carrinho */
+.w-8 {
+  width: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.transition-colors {
+  transition: background-color 0.3s ease;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Botão confirmar desabilitado */
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+/* Botão remover ingrediente */
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.bg-red-600 {
+  background-color: #dc2626;
+}
+
+.hover\:bg-red-600:hover {
+  background-color: #dc2626;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Inputs com padding esquerdo para ícones */
+.smartstock-input.pl-12 {
+  padding-left: 3rem;
+}
+
+/* Formulários com espaçamento */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Alinhamento central e espaçamento para mensagens e telas de confirmação */
+.min-h-96 {
+  min-height: 24rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Botão voltar simples posicionado no topo esquerdo */
+.back-button {
+  position: absolute;
+  top: 1.25rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #14b8a6;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #0f766e;
+}
+
+/* Botão "Adicionar ingrediente" no cadastrar receita */
+.border-dashed {
+  border-style: dashed;
+}
+
+/* Botão "Confirmar Pedido" no Pedidos */
+button[disabled] {
+  background-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Scroll suave para formulários mais longos */
+html {
+  scroll-behavior: smooth;
+}

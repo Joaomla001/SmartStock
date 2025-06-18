@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Estoque - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('gerenciar-receitas.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo" />
+      <div class="absolute top-6 right-6 flex gap-2">
+        <button onclick="navigateTo('cadastrar-ingrediente.html')" class="smartstock-menu-button">
+          + Cadastrar Ingrediente
+        </button>
+        <button onclick="navigateTo('gerenciar-receitas.html')" class="smartstock-menu-button">
+          Gerenciar Receitas
+        </button>
+      </div>
+    </div>
+
+    <div class="px-6 pb-6">
+      <h2 class="form-title">ESTOQUE</h2>
+
+      <div id="stock-list" class="space-y-3"></div>
+    </div>
+  </div>
+</body>
+</html>
+

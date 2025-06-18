@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Novo Pedido - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('login.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo" />
+      <button
+        onclick="navigateTo('gerenciar-receitas.html')"
+        class="smartstock-menu-button"
+      >
+        + Cadastrar Receita
+      </button>
+    </div>
+
+    <div class="px-6 pb-6">
+      <h2 class="form-title">NOVO PEDIDO</h2>
+
+      <div class="grid-two-columns">
+        <!-- Menu Items -->
+        <div class="menu-items">
+          <h3 class="section-title">Menu</h3>
+          <div id="menu-list" class="menu-list"></div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart-container">
+          <div class="cart-header">
+            <span class="cart-icon">🛒</span>
+            <h3 class="section-title">Carrinho</h3>
+          </div>
+          <div id="cart-content" class="cart-content">
+            <p class="empty-cart-message">Carrinho vazio</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        id="confirm-order"
+        class="confirm-order-button"
+        disabled
+      >
+        Confirmar Pedido
+      </button>
+    </div>
+  </div>
+</body>
+</html>

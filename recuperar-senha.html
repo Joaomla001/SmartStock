@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recuperar Senha - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('login.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo-large" />
+    </div>
+
+    <div class="px-6 pb-6">
+      <div class="smartstock-card">
+        <h2 class="form-title">RECUPERAR SENHA</h2>
+
+        <p class="form-description">
+          Digite seu email cadastrado para receber as instruções de redefinição de senha
+        </p>
+
+        <form id="recover-form" class="form-group">
+          <div class="input-icon">
+            <span class="icon">📧</span>
+            <input type="email" id="recover-email" placeholder="Email" required />
+          </div>
+
+          <button type="submit" class="smartstock-button-primary">ENVIAR EMAIL</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

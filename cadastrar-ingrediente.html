@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastrar Ingrediente - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('estoque.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo" />
+    </div>
+
+    <div class="px-6 pb-6">
+      <h2 class="form-title">CADASTRAR INGREDIENTE</h2>
+
+      <div class="space-y-4 mb-8">
+        <div>
+          <label class="label">Nome</label>
+          <input type="text" id="name" class="smartstock-input" />
+        </div>
+
+        <div>
+          <label class="label">Unidade de Medida</label>
+          <select id="unit" class="smartstock-input">
+            <option value="">Selecione</option>
+            <option value="g">Gramas (g)</option>
+            <option value="kg">Quilogramas (kg)</option>
+            <option value="ml">Mililitros (ml)</option>
+            <option value="l">Litros (l)</option>
+            <option value="un">Unidades (un)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label">Quantidade Disponível</label>
+          <input type="number" id="quantity" class="smartstock-input" />
+        </div>
+
+        <div>
+          <label class="label">Validade</label>
+          <input type="date" id="expiry" class="smartstock-input" placeholder="dd/mm/aaaa" />
+        </div>
+      </div>
+
+      <button id="btn-save-ingredient" class="btn-primary w-full py-4 font-bold text-lg rounded-lg">
+        Cadastrar
+      </button>
+    </div>
+  </div>
+</body>
+</html>

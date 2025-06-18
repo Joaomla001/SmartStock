@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container">
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo-large" />
+    </div>
+
+    <div class="px-6 pb-6">
+      <div class="smartstock-card">
+        <h2 class="login-title">ENTRAR</h2>
+
+        <form id="login-form" class="form-group">
+          <div class="input-icon">
+            <span class="icon">📧</span>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+
+          <div class="input-icon">
+            <span class="icon">🔒</span>
+            <input type="password" id="password" placeholder="Senha" required />
+          </div>
+
+          <button type="submit" class="smartstock-button-primary">ENTRAR</button>
+        </form>
+
+        <div class="text-links">
+          <button onclick="navigateTo('recuperar-senha.html')" class="text-link">Esqueceu sua senha?</button>
+          <button onclick="navigateTo('cadastro.html')" class="text-link strong">Criar nova conta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

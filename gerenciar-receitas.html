@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerenciar Receitas - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('pedidos.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo" />
+      <div class="header-buttons">
+        <button onclick="navigateTo('cadastrar-receita.html')" class="smartstock-menu-button">
+          + Cadastrar Receita
+        </button>
+        <button onclick="navigateTo('estoque.html')" class="smartstock-menu-button">
+          📦 Estoque
+        </button>
+      </div>
+    </div>
+
+    <div class="px-6 pb-6">
+      <div id="recipes-list" class="recipes-list"></div>
+    </div>
+  </div>
+</body>
+</html>

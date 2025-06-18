@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastrar Receita - SmartStock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="smartstock-container relative">
+    <button onclick="navigateTo('gerenciar-receitas.html')" class="back-button">← Voltar</button>
+
+    <div class="smartstock-header">
+      <img src="logo.png" alt="SmartStock Logo" class="smartstock-logo large" />
+    </div>
+
+    <div class="px-6 pb-6">
+      <h2 class="form-title">MONTAR RECEITA</h2>
+
+      <div class="space-y-4 mb-6">
+        <input
+          type="text"
+          id="recipe-name"
+          placeholder="Nome da Receita"
+          class="smartstock-input"
+        />
+
+        <div id="ingredients-list"></div>
+
+        <button
+          id="add-ingredient-btn"
+          class="w-full py-3 border-2 border-dashed border-smartstock-teal text-smartstock-teal font-semibold rounded-lg hover:bg-smartstock-teal hover:bg-opacity-10 transition-colors flex items-center justify-center gap-2"
+        >
+          <span style="font-weight: bold; font-size: 20px;">+</span> Adicionar Ingrediente
+        </button>
+      </div>
+
+      <button id="save-recipe-btn" class="w-full py-4 bg-smartstock-orange text-white font-bold text-lg rounded-lg hover:bg-smartstock-orange-dark transition-colors">
+        Salvar
+      </button>
+    </div>
+  </div>
+</body>
+</html>
